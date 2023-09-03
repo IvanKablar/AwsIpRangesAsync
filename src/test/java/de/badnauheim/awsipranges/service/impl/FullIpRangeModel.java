@@ -25,17 +25,18 @@ public record FullIpRangeModel(String syncToken, String createDate, List<IpRange
 
     @Override
     public String toString() {
-        return syncToken.concat("\n" + createDate).concat(ipRanges.toString()).concat(ipRangesV6.toString());
+        return this.syncToken.concat("\n" + this.createDate).concat(this.ipRanges.toString()).concat(this.ipRangesV6.toString());
     }
 
     @Override
     public boolean equals(Object obj) {
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
         FullIpRangeModel secondModel = (FullIpRangeModel) obj;
-        return syncToken.equals(secondModel.syncToken) &&
-                createDate.equals(secondModel.createDate) &&
-                ipRanges.equals(secondModel.ipRanges) &&
-                ipRangesV6.equals(secondModel.ipRangesV6) &&
-                syncToken.equals(secondModel.syncToken) &&
-                createDate.equals(secondModel.createDate);
+        return  this.syncToken.equals(secondModel.syncToken) &&
+                this.createDate.equals(secondModel.createDate) &&
+                this.ipRanges.equals(secondModel.ipRanges) &&
+                this.ipRangesV6.equals(secondModel.ipRangesV6);
     }
 }

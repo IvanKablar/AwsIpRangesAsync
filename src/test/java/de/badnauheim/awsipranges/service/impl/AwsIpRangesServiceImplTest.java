@@ -18,7 +18,7 @@ import java.util.List;
  * Ivan Kablar
  * <p>
  * Description:
- * This class tests the RestTemplate and the json parsing.
+ * This class tests the semantics of the AwsIpRangesServiceImpl class.
  */
 @SpringBootTest
 class AwsIpRangesServiceImplTest {
@@ -134,7 +134,7 @@ class AwsIpRangesServiceImplTest {
                 smallJsonString.getBytes()));
         // creating a second object of type FullIpRangeModel for comparison with the first model
         FullIpRangeModel secondFullIpRangeModel = secondFullModelJsonParser.readValueAs(FullIpRangeModel.class);
-        Assertions.assertTrue(secondFullIpRangeModel.equals(fullIpRangeModel));
+        Assertions.assertEquals(secondFullIpRangeModel, fullIpRangeModel);
     }
 
     @Test
@@ -176,6 +176,6 @@ class AwsIpRangesServiceImplTest {
                 differingJsonString.getBytes()));
         // creates a second object of type FullIpRangeModel for comparison with the first model
         FullIpRangeModel secondFullIpRangeModel = secondFullModelJsonParser.readValueAs(FullIpRangeModel.class);
-        Assertions.assertFalse(secondFullIpRangeModel.equals(fullIpRangeModel));
+        Assertions.assertNotEquals(secondFullIpRangeModel, fullIpRangeModel);
     }
 }

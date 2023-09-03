@@ -22,7 +22,7 @@ import java.util.List;
 @Service
 public class AwsIpRangesServiceImpl implements AwsIpRangesService {
 
-    private ObjectMapper objectMapper;
+    private final ObjectMapper objectMapper;
 
     private final static String IP4PREFIXES_ARRAY_NAME = "prefixes";
 

@@ -63,10 +63,9 @@ public class AwsIpRangesController {
     }
 
     private Flux<DataBuffer> getDataBufferFlux() {
-        Flux<DataBuffer> responseBody = this.webClient
+       return this.webClient
                 .get()
                 .exchangeToFlux(clientResponse -> clientResponse.body(BodyExtractors.toDataBuffers()));
-        return responseBody;
     }
 
     private InputStream readAsInputStream(Publisher<DataBuffer> responseBody) throws IOException {

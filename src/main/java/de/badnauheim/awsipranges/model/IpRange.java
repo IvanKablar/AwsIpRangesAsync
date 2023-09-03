@@ -32,6 +32,9 @@ public record IpRange(String ipPrefix, String region, String service, String net
 
     @Override
     public boolean equals(Object obj) {
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
         return this.ipPrefix.equals(((IpRange) obj).ipPrefix) &&
                 this.region.equals(((IpRange) obj).region) &&
                 this.service.equals(((IpRange) obj).service) &&

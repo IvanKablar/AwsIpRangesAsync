@@ -16,7 +16,6 @@ public class TestAwsIpRangesController {
 
     private WebTestClient.BodyContentSpec testWebClientResult;
 
-
     private @Value("${url}") String url;
 
     @BeforeEach
@@ -47,15 +46,4 @@ public class TestAwsIpRangesController {
                 .jsonPath("$.ipv6_prefixes").isNotEmpty()
                 .jsonPath("$.ipv6_prefixes[0]").isNotEmpty();  // assume first ip-range object inside array should never be empty;
     }
-
-//    @Test
-//    void testIpRangesStartWithAp() throws IOException {
-//
-//        List<IpRange> ipRanges = awsIpRangesServiceImpl.getIpRanges("ap", fullJsonInputStream);
-//        Assertions.assertTrue(ipRanges.size()>1);
-//        for(IpRange ipRange : ipRanges) {
-//            String ipRangeRegion = ipRange.getRegion();
-//            Assertions.assertEquals(true, ipRangeRegion.startsWith("ap"));
-//        }
-//    }
 }
