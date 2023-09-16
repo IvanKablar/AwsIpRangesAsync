@@ -32,7 +32,7 @@ import java.util.stream.Collectors;
  * * <a href="https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html#aws-ip-syntax">...</a> for more
  * details.
  * <p>
- * Note that there is no need to declare the 'maxInMemorySize' for the WebClient as the parsing is so efficient,
+ * Note that there is no need to declare the 'maxInMemorySize' for the WebClient as the parsing is efficient enough,
  * that it consumes a minimum of memory.
  */
 @RestController

@@ -1,7 +1,6 @@
-package de.badnauheim.awsipranges.service.impl;
+package de.badnauheim.awsipranges.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import de.badnauheim.awsipranges.model.IpRange;
 
 import java.util.List;
 

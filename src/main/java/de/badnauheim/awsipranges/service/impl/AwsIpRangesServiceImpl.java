@@ -37,7 +37,7 @@ public class AwsIpRangesServiceImpl implements AwsIpRangesService {
     }
 
     /**
-     * This method returns a list of ip-ranges provided by an InputStream, that is filtered by the region.
+     * This method returns a list of ip-ranges provided by an InputStream. The list can be filtered by the region.
      *
      * @param pRegion     the region parameter for the filtering of regions.
      * @param inputStream contains the json.

@@ -2,6 +2,7 @@ package de.badnauheim.awsipranges.service.impl;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import de.badnauheim.awsipranges.model.FullIpRangeModel;
 import de.badnauheim.awsipranges.model.IpRange;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

@@ -7,8 +7,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * Author: Ivan Kablar
  * <p>
  * Description:
- * This record is a model of the json object from the json string from the aws website. It contains information about
- * ip-ranges.
+ * This record is a model of the json object from the aws website. It contains information about ip-ranges.
  */
 public record IpRange(String ipPrefix, String region, String service, String networkBorderGroup) {
     public IpRange(@JsonProperty(value = "ip_prefix") @JsonAlias(value = "ipv6_prefix") String ipPrefix,
