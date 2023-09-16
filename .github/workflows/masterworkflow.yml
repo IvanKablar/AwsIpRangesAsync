@@ -7,8 +7,8 @@ on:
 
 jobs:
   gradle-build-and-test:
-    uses: IvanKablar/AwsIpRanges/.github/workflows/gradle_build_test.yml@master
+    uses: IvanKablar/AwsIpRangesAsync/.github/workflows/gradle_build_test.yml@master
   build-and-push-docker-image:
-    uses: IvanKablar/AwsIpRanges/.github/workflows/docker-image.yml@master
+    uses: IvanKablar/AwsIpRangesAsync/.github/workflows/docker-image.yml@master
     secrets: inherit     
     needs: [gradle-build-and-test]
