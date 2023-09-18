@@ -11,4 +11,4 @@ To verify this statement do the following steps:
 4. execute the command: ```java -jar -Xmx18m AwsIpRanges-0.0.1-SNAPSHOT.jar```
 5. open your browser and run ```http://localhost:8080/ipranges?region=all```
 
-Doing so, you will get the whole Json diplayed in your browser, while the Java app reserves uses 18 Megabytes for the processing.
+Doing so, you will get the whole Json diplayed in your browser, while the JVM reserves only a maximum of 18 Megabytes for the processing.
