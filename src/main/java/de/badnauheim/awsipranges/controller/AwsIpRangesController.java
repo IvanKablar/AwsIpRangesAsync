@@ -29,8 +29,7 @@ import java.util.stream.Collectors;
  * parameter are EU, US, AP, CN, SA, AF, CA and ALL for all regions.
  * <p>
  * For more details about the json file holding the ip-ranges see:
- * * <a href="https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html#aws-ip-syntax">...</a> for more
- * details.
+ * * <a href="https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html#aws-ip-syntax">...</a>.
  * <p>
  * Note that there is no need to declare the 'maxInMemorySize' for the WebClient as the parsing is efficient enough,
  * that it consumes a minimum of memory.
