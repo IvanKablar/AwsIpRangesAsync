@@ -140,7 +140,7 @@ class AwsIpRangesServiceImplTest {
 
     @Test
     void testEqualsMethodsFailsWithUnequalJsons() throws IOException {
-        // added '_XXX' to the second object of the 'prefixes' array to make this json different from the first json.
+        // added '_XXXX' to the second object of the 'prefixes' array to make this json different from the first json.
         String differingJsonString = """
                  {
                   "syncToken": "1692296590",
