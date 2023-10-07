@@ -49,9 +49,9 @@ on:
     branches: [ "master" ]
 
 env:
-  PROJECT_ID: supergithubproject # TODO: update Google Cloud project id
+  PROJECT_ID: testproject-401321 # TODO: update Google Cloud project id
   GAR_LOCATION: europe-west3 # TODO: update Artifact Registry location
-  SERVICE: hello # TODO: update Cloud Run service name
+  SERVICE:  mycloudrun # TODO: update Cloud Run service name
   REGION: europe-west3 # TODO: update Cloud Run service region
 
 jobs:
