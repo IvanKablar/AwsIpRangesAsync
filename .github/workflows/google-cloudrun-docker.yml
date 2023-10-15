@@ -51,7 +51,7 @@ on:
 env:
   PROJECT_ID:   deploytocloudrun-401920  # TODO: update Google Cloud project id
   GAR_LOCATION: europe-west3 # TODO: update Artifact Registry location
-  SERVICE:  quickstart-docker-repo2 # TODO: update Cloud Run service name
+  SERVICE:  cloudrun-instance # TODO: update Cloud Run service name
   REGION: europe-west3 # TODO: update Cloud Run service region
 
 jobs:
