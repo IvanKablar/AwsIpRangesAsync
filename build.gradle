@@ -38,6 +38,8 @@ tasks.named('test') {
 }
 
 bootJar {
-	archiveFileName = "app.jar"
+	from('.ebextensions') {
+		into('.ebextensions' )
+	}
 }
 
